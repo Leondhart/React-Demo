@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  background-color: whitesmoke;
+  max-width: 80%;
+  min-width: 60%;
+  padding: 20px 50px;
+  border-radius: 5px;
+  margin: 20px 0px;
+
+ > div {
+   >.title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 32px;
+   }
+ }
+}
+
+.form-spacing {
+  margin-bottom: 20px;
+}
+
+.spacing-40 {
+  margin-bottom: 40px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.item-container {
+  & > div {
+    margin-bottom: 10px;
+  }
+}

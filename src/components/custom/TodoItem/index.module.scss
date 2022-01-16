@@ -1,0 +1,55 @@
+:local(.todoItem) {
+    display: flex;
+    flex: 1 1 100%;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    .title {
+        font-size: 24px;
+    }
+
+    .content{
+        display: flex;
+        flex: 1 1 80%;
+    }
+
+    .action {
+        display: flex;
+        flex: 1 1 20%;
+        justify-content: center;
+
+        > :not(:last-child) {
+            margin-right: 10px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 5px;
+            width: 32px;
+            height: 32px;
+            color: white;
+
+            &.delete {
+                background-color: #dc3545;
+            }
+
+            &.edit {
+                background-color: #007bff;
+            }
+
+            &.done {
+                background-color: #28a745;
+            }
+
+            &.notDone {
+                background-color: #6c757d;
+            }
+        }
+    }
+
+}
